@@ -1,0 +1,27 @@
+skey
+Copyright 2026 MonkFish IoT
+
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/).
+
+Third-party components and license notes
+----------------------------------------
+
+OpenSSL
+    Used as a build and runtime dependency for cryptographic primitives
+    (SHA-256, AES-128-CBC, HMAC-SHA256, RSA, X.509). This repository does
+    not contain OpenSSL source code; the library is linked externally as
+    provided by the OpenSSL project or by the target system.
+    OpenSSL 3.x is licensed under the Apache License 2.0. OpenSSL 1.1.1
+    and earlier are covered by the OpenSSL License and the original
+    SSLeay license.
+
+Linux MTD user-space interface definitions
+    The <mtd/mtd-user.h> header (ioctl structures and constants) originates
+    from the Linux kernel UAPI (GPL-2.0 WITH Linux-syscall-note) and is used
+    at compile time only. No kernel or mtd-utils source code is included in
+    this repository.
+
+Monkfish Root CA certificate (files/ca.pem)
+    A public X.509 root certificate distributed as trust material for
+    device-server mutual authentication. It contains no private key.
